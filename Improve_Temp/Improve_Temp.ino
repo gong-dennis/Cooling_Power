@@ -22,6 +22,7 @@ void setup() {
 
 void loop() {
   timeSync(loopTime);
+  //int val = analogRead(0) - 512;
   double val = thermocouple.readCelsius();
   
   buttonState = digitalRead(buttonPin);
